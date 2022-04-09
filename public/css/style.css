@@ -1,0 +1,500 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* GOOGLE FONT IMPORT LINK */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap");
+
+/*******************************/
+/* SOME DEFAULT DECLARATIONS */
+/*******************************/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: var(--font-primary);
+  line-height: 1;
+}
+
+/*********************/
+/* FONT FAMILY USED */
+/********************/
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+}
+
+/****************/
+/* COLOR USED */
+/****************/
+:root {
+  --color-primary: #40c057;
+  --color-primary-light: #40c057d8;
+  --color-secondary: #1864ab;
+  --color-tertiary: #4b0e04;
+  --white-color: #fff;
+  --body-color: #f8f9fa;
+  --text-color: #222;
+  --text-light-color: #333;
+  --grey-color: rgb(185, 185, 185);
+  --para-text: #888;
+}
+
+/******************/
+/* PADDING USED */
+/******************/
+:root {
+  --padding-high: 6rem;
+  --padding-mid: 5rem;
+  --padding-low: 4rem;
+}
+
+/********************/
+/* FONT SIZE USED */
+/********************/
+:root {
+  --minmal-size: 2rem;
+  --paragraph-max-size: 1.8rem;
+  --paragraph-mid-size: 1.6rem;
+  --paragraph-low-size: 1.4rem;
+}
+
+/**********************/
+/* SOME TAG DEFAULTS */
+/**********************/
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+p {
+  line-height: 1.5;
+  color: var(--text-light-color);
+}
+
+/*********************************/
+/* HEADER SECTION DESIGN STARTS */
+/*********************************/
+.header_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+  font-family: var(--font-secondary);
+  box-shadow: 0 1rem 3.2rem rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding-right: 5rem;
+}
+
+.header_section .logo {
+  width: 100px;
+}
+
+.nav .nav_link {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: flex-end;
+}
+
+.nav .nav_link .nav_links {
+  position: relative;
+  top: 6px;
+}
+
+.nav .nav_link .nav_links a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.nav .nav_link .nav_links a:hover {
+  color: var(--color-primary);
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  cursor: pointer;
+  display: none;
+}
+
+.burger .line {
+  height: 4px;
+  width: 30px;
+  background-color: var(--text-color);
+}
+
+/*********************************/
+/* FIRST SECTION DESIGN STARTS */
+/*********************************/
+.first_section .item img {
+  height: 85vh;
+}
+
+/*********************************/
+/* SECOND SECTION DESIGN STARTS */
+/*********************************/
+.section__heading {
+  text-align: center;
+  font-size: 6rem;
+  letter-spacing: -3px;
+  background: -webkit-linear-gradient(
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.second_section {
+  padding: var(--padding-high) 0;
+}
+
+.second_section_text {
+  padding: 0 4rem;
+}
+
+.second_section_text p {
+  text-align: justify;
+  font-size: 1.6rem;
+  color: var(--para-text);
+}
+
+.second_section_image img {
+  border-radius: 2rem;
+}
+
+.second_section .section__heading {
+  padding-bottom: 2rem;
+}
+
+/*********************************/
+/* THIRD SECTION DESIGN STARTS */
+/*********************************/
+.third_section {
+  padding-bottom: var(--padding-high);
+}
+
+.team_card {
+  padding: 4rem;
+}
+
+.team_card_manager {
+  padding: 4rem 1rem;
+  width: 100%;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+
+.team_card .img__bx img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.team_card .text__cnt {
+  text-align: center;
+}
+
+.team_card .text__cnt h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.team_card .text__cnt p {
+  font-size: var(--paragraph-max-size);
+}
+
+/*********************************/
+/* FOURTH SECTION DESIGN STARTS */
+/*********************************/
+.fourth_section {
+  padding-bottom: var(--padding-high);
+}
+
+.fourth_section .section__heading {
+  padding-bottom: 2rem;
+}
+
+.fourth_section .advanced_row {
+  padding-top: 5rem;
+}
+
+.fourth_section .row .fourth_sec_text_area {
+  padding-left: 2rem;
+}
+
+.fourth_section .advanced_row .fourth_sec_text_area {
+  padding-right: 2rem;
+  padding-left: 0;
+}
+
+.fourth_sec_text_area p {
+  font-size: 2rem;
+  text-align: justify;
+  color: var(--para-text);
+}
+
+.button__box__fourth_Sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.fourth_sec_btn {
+  font-size: 2rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.fourth_sec_btn:hover {
+  color: #fff;
+  background-color: #25e949;
+}
+
+/*********************************/
+/* FIFTH SECTION DESIGN STARTS */
+/*********************************/
+.fifth_section {
+  padding-bottom: var(--padding-high);
+}
+
+.fifth_section .section__heading {
+  padding-bottom: 2rem;
+}
+
+.inner__card__box {
+  margin: 0 2rem;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+}
+
+.inner__card__box span {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.inner__card__box .number_count {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/*********************************/
+/* SIXTH SECTION DESIGN STARTS */
+/*********************************/
+.sixth_section {
+  padding: var(--padding-high) 0;
+  padding-top: 2rem;
+}
+
+.sixth_section .section__heading {
+  padding-bottom: 2rem;
+}
+
+.dn_family_video {
+  width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+}
+
+.video_holder_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*********************************/
+/* SEVENTH SECTION DESIGN STARTS */
+/*********************************/
+.seventh_section {
+  padding-bottom: var(--padding-mid);
+}
+
+.seventh_section .team_card .img__bx img {
+  width: 100px;
+  height: 100px;
+}
+
+.star_icon {
+  font-size: 2rem;
+  fill: rgb(242, 193, 15);
+}
+
+.seventh_section .team_card .text__cnt {
+  padding: 0 2rem;
+}
+
+/*********************************/
+/* EIGHTH SECTION DESIGN STARTS */
+/*********************************/
+.eighth_section {
+  padding-bottom: var(--padding-high);
+}
+
+.eighth__sec_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eighth__sec_column p {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--para-text);
+}
+
+.eighth__sec_column a {
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: var(--color-primary);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.eighth__sec_column a:hover {
+  background-color: #25e949;
+}
+
+/*********************************/
+/* FOOTER SECTION DESIGN STARTS */
+/*********************************/
+.footer {
+  background-color: #051a2d;
+  color: #fff;
+  padding: 4rem 0;
+  padding-bottom: 1rem;
+}
+
+.footer .row {
+  padding-bottom: 1.5rem;
+}
+
+.footer_logo_box img {
+  width: 80px;
+  margin-bottom: 2rem;
+}
+
+.company__main_details h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.company__main_details a {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.fontAwesomeIcon {
+  font-size: 3rem !important;
+}
+
+.footer_col_1 h3 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.footer_inner_col__1__items {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer_inner_col__1__items a {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.All_social_media_box {
+  display: flex;
+  gap: 2rem;
+}
+
+.All_social_media_box span a {
+  color: #fff;
+}
+
+.copyright_paragraph {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+}
+
+/*********************************/
+/* VIDEOS SECTION DESIGN STARTS */
+/*********************************/
+.video_section {
+  padding: var(--padding-mid) 0;
+}
+
+.video_section .section__heading {
+  margin-bottom: 2rem;
+}
+
+.video_Sec_holder_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.video_Sec_holder_col .dn_family_video {
+  width: 60%;
+}
+
+.video_Sec_holder_col .vertical__video {
+  width: 400px;
+  height: 550px;
+}
+
+/*********************************/
+/* PROJECTS SECTION DESIGN STARTS */
+/*********************************/
+.project__section {
+  padding: var(--padding-low) 0;
+}
+
+.project__section .section__heading {
+  margin-bottom: 2rem;
+}
+
+.project__image__box img {
+  width: 100%;
+  margin-bottom: 5rem;
+  border-radius: 4px;
+}

@@ -1,0 +1,378 @@
+/*********************************/
+/* HEADER SECTION MEDIA QUERIES */
+/*********************************/
+@media (max-width: 1200px) {
+  .header_section {
+    padding: 1rem 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .header_section {
+    position: relative;
+    height: 15vh;
+    padding: 1rem 2rem;
+  }
+
+  .nav .nav_link {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    height: 85vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3rem;
+    background-color: #f8f9fa;
+  }
+
+  .nav .nav_link {
+    transform: translateX(-200%);
+    transition: all 0.3s;
+  }
+
+  .header_section .navBarActive {
+    transform: translateX(0);
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+  }
+
+  .toggle .line {
+    transition: all 0.3s;
+  }
+
+  .toggle .line_1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line_2 {
+    opacity: 0;
+  }
+
+  .toggle .line_3 {
+    transform: rotate(45deg) translate(-8px, -9px);
+  }
+
+  .nav .nav_link .nav_links a {
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 500px) {
+  .header_section {
+    height: 10vh;
+    padding: 0.4rem 1rem;
+  }
+  .header_section .logo {
+    width: 60px;
+  }
+
+  .nav .nav_link {
+    left: 0;
+    width: 100%;
+    top: 10vh;
+    height: 90vh;
+  }
+
+  .nav .nav_link {
+    transform: translateX(-100%);
+  }
+  .header_section .navBarActive {
+    transform: translateX(0%);
+    box-shadow: none;
+  }
+}
+
+/*********************************/
+/* FIRST SECTION MEDIA QUERIES */
+/*********************************/
+@media (min-height: 1000px) {
+  .first_section .item img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first_section .item img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .first_section .item img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  @media (max-width: 576px) {
+    .first_section .item img {
+      height: 250px;
+    }
+  }
+}
+
+/*********************************/
+/* SECOND SECTION MEDIA QUERIES */
+/*********************************/
+@media (max-width: 1200px) {
+  .second_section .row {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .second_section_text {
+    padding: 0;
+  }
+}
+
+@media (max-width: 567px) {
+  .section__heading {
+    font-size: 4rem;
+    letter-spacing: -1px;
+  }
+
+  .second_section {
+    margin: 0 3rem;
+  }
+
+  .second_section_image img {
+    border-radius: 0.5rem;
+  }
+}
+
+/*********************************/
+/* THIRD SECTION MEDIA QUERIES */
+/*********************************/
+@media (min-width: 1px) {
+  .third_section .section__heading {
+    position: relative;
+    top: 20px;
+  }
+}
+
+@media (max-width: 786px) {
+  .team_card {
+    padding: 3rem;
+  }
+}
+
+/*********************************/
+/* FOURTH SECTION MEDIA QUERIES */
+/*********************************/
+@media (max-width: 1400px) {
+  .fourth_sec_text_area p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .fourth_sec_text_area p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .fourth_section .row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .fourth_section .advanced_row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .fourth_section .row .fourth_sec_text_area {
+    padding: 0;
+  }
+
+  .fourth_sec_text_area p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .fourth_section {
+    margin: 0 3rem;
+  }
+
+  .fourth_section .row img {
+    border-radius: 0.5rem;
+  }
+
+  .fourth_sec_text_area p {
+    font-size: 1.6rem;
+  }
+}
+
+/*********************************/
+/* FIFTH SECTION MEDIA QUERIES */
+/*********************************/
+@media (max-width: 992px) {
+  .fifth_sec_card {
+    margin-bottom: 4rem;
+  }
+  .fifth_sec_card:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*********************************/
+/* SIXTH SECTION MEDIA QUERIES */
+/*********************************/
+@media (max-width: 992px) {
+  .dn_family_video {
+    width: 600px;
+  }
+}
+
+@media (max-width: 668px) {
+  .dn_family_video {
+    width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dn_family_video {
+    width: 450px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .dn_family_video {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .dn_family_video {
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dn_family_video {
+    width: 300px;
+  }
+}
+
+@media (max-width: 330px) {
+  .dn_family_video {
+    width: 200px;
+  }
+}
+
+/*********************************/
+/* EIGHTH SECTION MEDIA QUERIES */
+/*********************************/
+@media (max-width: 576px) {
+  .eighth_section {
+    margin: 0 3rem;
+  }
+  .eighth__sec_column p {
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+}
+
+/*********************************/
+/* FOOTER SECTION MEDIA QUERIES */
+/*********************************/
+@media (max-width: 576px) {
+  .footer .row {
+    margin: 0 2rem;
+  }
+  .copyright_paragraph {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .fontAwesomeIcon {
+    font-size: 2rem !important;
+  }
+  .footer_col_1 h3 {
+    font-size: 1.8rem;
+  }
+  .footer .row {
+    margin: 0 1rem;
+  }
+  .company__main_details h2 {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .footer .row {
+    margin: 0px;
+    overflow: hidden;
+  }
+}
+
+/*********************************/
+/* VIDEOS SECTION MEDIA QUERIES */
+/*********************************/
+@media (max-width: 576px) {
+  .video_Sec_holder_col .dn_family_video {
+    width: 90%;
+  }
+
+  .video_Sec_holder_col .vertical__video {
+    width: 90%;
+    height: 400px;
+  }
+
+  .video_section {
+    padding: var(--padding-low) 0;
+  }
+}
+
+/*********************************/
+/* PROJECTS SECTION MEDIA QUERIES */
+/*********************************/
+@media (max-width: 992px) {
+  .project__section .section__heading {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project__section .section__heading {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .project__section {
+    margin: 0 3rem;
+  }
+
+  .project__section .section__heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .project__section .section__heading {
+    font-size: 2.4rem;
+  }
+
+  .project__section {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .project__section .section__heading {
+    font-size: 2rem;
+  }
+}
